@@ -34,14 +34,16 @@ void setup()
 
     cp5 = new ControlP5(this);
 
-    Slider1 = cp5.addSlider("Brightness 1", 0, 255, 0, 50, 125, 255, 12)
+    Slider1 = cp5.addSlider("PWM 1", 0, 255, 0, 50, 125, 255, 12)
                   .setPosition((width / 2), (height / 2))
+                  .setDecimalPrecision(0)
                   .setSize(255, 50)
                   .setRange(0, 255)
                   .setFont(font);
 
-    Slider2 = cp5.addSlider("Brightness 2", 0, 255, 0, 50, 125, 255, 12)
+    Slider2 = cp5.addSlider("PWM 2", 0, 255, 0, 50, 125, 255, 12)
                   .setPosition((width / 2), (height / 2) + 125)
+                  .setDecimalPrecision(0)
                   .setSize(255, 50)
                   .setRange(0, 255)
                   .setFont(font);
